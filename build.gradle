@@ -10,6 +10,7 @@ plugins {
     // Apply the java-library plugin to add support for Java Library
     id 'java-library'
     id 'idea'
+    id 'jacoco'
 }
 
 repositories {
@@ -27,4 +28,6 @@ dependencies {
 
     // Use JUnit test framework
     testImplementation 'junit:junit:4.13'
+
+    testImplementation('org.hamcrest:hamcrest-all:1.3')
 }
